@@ -1,0 +1,152 @@
+/* * {
+  border-top: 10px solid #1098ad;
+} */
+/* przykład dla wszystki elementów, ale nie akurat z border-top xd */
+
+body {
+  font-family: sans-serif;
+  color: #444;
+
+  border-top: 10px solid #1098ad;
+}
+
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+
+h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+li {
+  font-size: 20px;
+}
+
+/* footer p {
+  font-size: 16px;
+}*/
+
+/* można ctrl+slash */
+
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+
+#copyright {
+  font-size: 16px;
+}
+
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.related {
+  list-style: none;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+}
+
+/* body {
+  background-color: antiquewhite;
+} */
+
+/* .first-li {
+  font-weight: bol;
+} */
+
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+}
+/* 
+li:nth-child(even) {
+  color: red;
+} */
+
+article p:first-child {
+  color: red;
+}
+/* nie ma first childa p tylko h2, wiec nie działa */
+/* to są pseudoklasy, dzialaja czasem slabo, ale przydają się czasami np przy li */
+
+/* Styling links */
+
+/* text decor - bez underline */
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1098ad;
+}
+
+/* najeżdzanie myszką */
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline orangered;
+}
+
+/* gdy klikamy */
+/* a:active {
+  background-color: black;
+  font-style: italic;
+} */
+
+/* Resolving conflicts */
+/* #copyright {
+  color: red;
+}
+
+.copyright {
+  color: blue;
+}
+
+.text {
+  color: yellow;
+}
+
+footer p {
+  color: green !important;
+} */
+
+nav a:link {
+  font-size: 18px;
+}
