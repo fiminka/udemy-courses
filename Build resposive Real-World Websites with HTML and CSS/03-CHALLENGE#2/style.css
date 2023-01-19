@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  width: 825px;
+  margin: 50px auto;
+  line-height: 1.4;
+  color: black;
+  border: 5px solid black;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+.product-title {
+  background-color: #d9d3d3;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.product-pic {
+  width: 30%;
+  height: auto;
+}
+
+.shipping {
+  font-size: 12px;
+}
+
+article h4 {
+  text-transform: uppercase;
+  font-size: 18 px;
+  margin-bottom: 10px;
+}
+
+.description {
+  margin-bottom: 30px;
+}
+
+.description p {
+  margin-bottom: 5px;
+}
+ul {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+li {
+  font-size: 16px;
+  list-style-type: square;
+  margin-bottom: 5px;
+}
+
+header h3 {
+  font-size: 22px;
+}
+
+header p {
+  color: #444;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Styling links */
+
+/* .more-info:link {
+  color: black;
+  text-decoration: underline;
+} */
+/* też zadziała, propozycja z filmiku */
+
+a:link {
+  color: black;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  background-color: #f7f7f7;
+}
+
+button {
+  font-size: 22px;
+  text-transform: uppercase;
+  background-color: black;
+  color: #fff;
+  cursor: pointer;
+  width: 100%;
+  height: auto;
+  padding: 10px 20px;
+}
+
+button:hover {
+  color: black;
+  background-color: #fff;
+}
