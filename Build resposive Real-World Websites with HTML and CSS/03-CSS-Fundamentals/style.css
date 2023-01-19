@@ -1,13 +1,56 @@
-/* * {
-  border-top: 10px solid #1098ad;
-} */
-/* przykład dla wszystki elementów, ale nie akurat z border-top xd */
+* {
+  /* border-top: 10px solid #1098ad; */
+  margin: 0;
+  padding: 0;
+}
+/* przykład dla wszystki elementów */
 
 body {
   font-family: sans-serif;
   color: #444;
 
   border-top: 10px solid #1098ad;
+}
+
+.container {
+  width: 800px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto;
+}
+/* trik na wyśrodkowanie strony */
+
+/* lepiej nie robić margin top i bottom jednoczesnie */
+.main-header {
+  background-color: #f7f7f7;
+  /* padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px; */
+  padding: 20px 40px;
+  margin-bottom: 60px;
+  height: 80px;
+}
+
+nav a:link {
+  font-size: 18px;
+}
+
+.post-header {
+  margin-bottom: 40px;
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding: 50px 0;
+  width: 500px;
 }
 
 h1,
@@ -24,11 +67,15 @@ h1 {
 
 h2 {
   font-size: 40px;
+  margin-bottom: 30px;
 }
 
 h3 {
   font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
+/* collapsing margins that they sum up */
 
 h4 {
   font-size: 20px;
@@ -39,10 +86,22 @@ h4 {
 p {
   font-size: 22px;
   line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
 }
 
 li {
   font-size: 20px;
+  margin-bottom: 10px;
+}
+
+li:last-child {
+  margin-bottom: 0;
 }
 
 /* footer p {
@@ -67,16 +126,6 @@ li {
 
 .related {
   list-style: none;
-}
-
-.main-header {
-  background-color: #f7f7f7;
-}
-
-aside {
-  background-color: #f7f7f7;
-  border-top: 5px solid #1098ad;
-  border-bottom: 5px solid #1098ad;
 }
 
 /* body {
@@ -124,6 +173,13 @@ a:hover {
   text-decoration: underline orangered;
 }
 
+.post-img {
+  width: 100%;
+  height: auto;
+}
+/* jesli nie jest height w html zrobiony to nie treba auto */
+/* procenty są super do responsywnych stron */
+
 /* gdy klikamy */
 /* a:active {
   background-color: black;
@@ -146,7 +202,3 @@ a:hover {
 footer p {
   color: green !important;
 } */
-
-nav a:link {
-  font-size: 18px;
-}
